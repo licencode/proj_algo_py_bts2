@@ -1,0 +1,36 @@
+FONCTIONS_UTILISEES
+VARIABLES
+  nombreMystere EST_DU_TYPE NOMBRE
+  nombrePropose EST_DU_TYPE NOMBRE
+  nombreEssais EST_DU_TYPE NOMBRE
+  jeuTermine EST_DU_TYPE NOMBRE
+DEBUT_ALGORITHME
+  nombreMystere PREND_LA_VALEUR ALGOBOX_ALEA_ENT(1,100)
+  nombreEssais PREND_LA_VALEUR 0
+  jeuTermine PREND_LA_VALEUR 0
+  AFFICHER "Saisir une nombre entre 1 et 100: "
+  TANT_QUE (jeuTermine==0) FAIRE
+    DEBUT_TANT_QUE
+    LIRE nombrePropose
+    nombreEssais PREND_LA_VALEUR nombreEssais+1
+    SI (nombrePropose < nombreMystere) ALORS
+      DEBUT_SI
+      AFFICHER* "Le nombre propose est plus petit"
+      FIN_SI
+      SINON
+        DEBUT_SINON
+        SI (nombrePropose > nombreMystere) ALORS
+          DEBUT_SI
+          AFFICHER* "Le nombre propose plus grand!"
+          FIN_SI
+          SINON
+            DEBUT_SINON
+            AFFICHER* "BRAVO !!! Vous avez gagne !!!"
+            jeuTermine PREND_LA_VALEUR 1
+            FIN_SINON
+        FIN_SINON
+    FIN_TANT_QUE
+  AFFICHER* "Vous avez terminer: "
+  AFFICHER nombreEssais
+  AFFICHER " Coups!"
+FIN_ALGORITHME

@@ -1,0 +1,9 @@
+from random import *
+
+nombreMystere = randint(1,100) # Variable avec nombres aléatoires entre 1 et 100
+nombreEssais = 0
+jueTermine = 0
+
+nombrePropose = input("Saisir une nombre entre 1 et 100: ") # Variable pour saisir numbre 
+
+while nombrePropose:
