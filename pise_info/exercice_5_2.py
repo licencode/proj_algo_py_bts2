@@ -26,15 +26,17 @@ FinTantQue
 Fin
 """
 
-nombre_choix = int(input("Saisez un nombre: "))
+###ma décision###
+
+nombre_choix = int(input("Saisissez un nombre: "))
 
 while nombre_choix >= 10 or nombre_choix <= 20:
     if nombre_choix <= 10:
         print("Plus")
-        nombre_choix = int(input("Saisez un nombre: "))
+        nombre_choix = int(input("Saisissez un nombre: "))
     elif nombre_choix >= 20:
         print("mois")
-        nombre_choix = int(input("Saisez un nombre: "))        
+        nombre_choix = int(input("Saisissez un nombre: "))        
     else:
         print("bon")
     break
