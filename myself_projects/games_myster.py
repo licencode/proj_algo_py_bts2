@@ -1,6 +1,7 @@
 from random import *
 
 # Variable avec nombres aléatoires entre 1 et 100
+
 nombreMystere = randint(1,100)
 
 # Variable type int pour compter essais qui commence à 0
